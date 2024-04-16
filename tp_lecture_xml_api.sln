@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tp_lecture_xml_api", "tp_lecture_xml_api.csproj", "{D8D9D690-8972-44A9-B26F-FBE24C6611AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D9D690-8972-44A9-B26F-FBE24C6611AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D9D690-8972-44A9-B26F-FBE24C6611AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D9D690-8972-44A9-B26F-FBE24C6611AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D9D690-8972-44A9-B26F-FBE24C6611AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
