@@ -37,10 +37,19 @@ public static class Tools
 
     public static string PrintDesigners(XmlDocument xmlDocument)
     {
-        XmlNode gameParentNode = xmlDocument.SelectSingleNode("");
+        XmlNode gameParentNode = xmlDocument.SelectSingleNode("/boardgames/boardgame");
 
         XmlNode gameChildNode = gameParentNode.SelectSingleNode("boardgamedesigner");
-
-        return gameChildNode.InnerText;
+        
+        if (gameChildNode != null)
+        {
+            string designerName = gameChildNode.InnerText;
+            
+            return designerName;
+        }
+        else
+        {
+            return "no Designer"; 
+        }
     }
 }

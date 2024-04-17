@@ -72,11 +72,13 @@ foreach (XmlNode node in xmlFirstSearch.DocumentElement.ChildNodes)
     string gameID = node.Attributes["objectid"].Value;
     
     Console.WriteLine($"-----\nId : {gameID}");
-    Console.WriteLine(Tools.PrintTitle(node));
+    Console.WriteLine("Title : " + Tools.PrintTitle(node));
 
     XmlDocument gameDetailsDoc = Tools.SearchId(gameID);
+
+    string designerName = Tools.PrintDesigners(gameDetailsDoc);
     
-    Console.WriteLine("Designer : " + Tools.PrintDesigners(gameDetailsDoc) + "\n-----");
+    Console.WriteLine("Designer : " + designerName + "\n-----");
     
 }
 
